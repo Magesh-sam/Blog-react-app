@@ -1,0 +1,67 @@
+.newpost{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-top: 50px;
+}
+.newpostform{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.newpostform > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input,textarea{
+  
+    outline: none;
+    padding: 20px 20px;
+    
+    border-radius: 10px;
+
+}
+.newpostsubmitbtn,.cancelbtn{
+    width: fit-content; 
+    padding: 10px 30px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgba(0, 128, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease-in-out;
+}
+.newpostsubmitbtn:hover,.cancelbtn:hover{
+    background: rgba(0, 128, 0, 1);
+    backdrop-filter: blur(5px);
+    color: white !important;
+
+}
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+.btngrp {
+    display: flex;
+}
+.cancelbtn{
+    background: rgba(200, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+.cancelbtn:hover{
+    background: rgba(200, 0, 0, 1);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+@media screen and (width<=540px) {
+    input,textarea{
+        width: 70%;
+        margin: auto;
+        
+    }
+    
+}
